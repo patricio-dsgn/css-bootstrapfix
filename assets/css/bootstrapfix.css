@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color1: #741eff;
+  --color2: #ffdd00;
+  --color3:#0cdcf3;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.header-fix{
+  background-color: var(--color1);
+}
+
+.all-fix{
+  background-color: var(--color3);
+}
+
+.h1-fix{
+  color: var(--color2);
+}
+
+.logo-fix{
+  width: 200px;
+}
+
+.img-fix{
+  border-radius: 20px!important;
+  border: 4px solid var(--color1);
+}
+
+
+
+/* 
+
+<576px	Small
+max-width	100%	540px	720px	960px	1140px	1320px */
+
+/* @media Media queries */
+
+
+body:after{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 2px 10px;
+}
+
+@media (max-width: 576px) {
+  body:after{content: 'Extra small <576px'; background-color: #8800ff;}
+}
+
+@media (min-width: 576px) {
+  body:after{content: 'Small ≥576px'; background-color: #0062ff;}
+}
+
+
+@media (min-width: 768px) {
+  body:after{content: 'Medium ≥768px'; background-color: #00f7ff;}
+}
+
+@media (min-width: 992px) {
+  body:after{content: 'Large ≥992px'; background-color: #9dff00;}
+}
+
+@media (min-width: 1200px) {  
+  body:after{content: 'Extra Large ≥1200px'; background-color: #ffe100;}
+}
+
+@media (min-width: 1400px) {
+  body:after{content: 'XXL ≥1400px'; background-color: #ff4400;}
+}
